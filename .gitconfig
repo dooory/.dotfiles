@@ -1,0 +1,7 @@
+[user]
+	email = 78720364+dooory@users.noreply.github.com
+	name = dooory
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
