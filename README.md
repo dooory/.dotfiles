@@ -1,2 +1,1 @@
-# arch
-Dotfiles for laptop
+# Hyprland Config
