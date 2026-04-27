@@ -20,3 +20,5 @@ opt.clipboard = "unnamedplus"
 opt.mouse = "a"
 opt.undofile = true
 opt.swapfile = false
+
+opt.winborder = "rounded"
