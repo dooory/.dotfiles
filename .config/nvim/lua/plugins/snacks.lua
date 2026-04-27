@@ -11,6 +11,9 @@ snacks.setup({
     gitbrowse = {
         enabled = true,
     },
+    lazygit = {
+        enabled = true,
+    },
 })
 
 local function mapPicker(key, command, desc, args)
@@ -37,6 +40,10 @@ mapPicker("li", "lsp_implementations", "Goto Implementation")
 vim.keymap.set("n", "<leader>go", function()
     snacks.gitbrowse.open()
 end, { desc = "Open Repo In Browser" })
+
+vim.keymap.set("n", "<leader>gz", function()
+    snacks.lazygit.open()
+end, { desc = "Open Lazy Git" })
 
 local wk = require("which-key")
 
