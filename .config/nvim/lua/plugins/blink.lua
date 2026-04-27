@@ -6,4 +6,20 @@ vim.pack.add({
 
 local blink = require("blink.cmp")
 
-blink.setup({})
+blink.setup({
+    sources = {
+        default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+        providers = {
+            lazydev = {
+                name = "LazyDev",
+                module = "lazydev.integrations.blink",
+                score_offset = 100,
+            },
+        },
+    },
+    completion = {
+        menu = {
+            auto_show_delay_ms = 0,
+        },
+    },
+})
