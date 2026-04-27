@@ -1,3 +1,4 @@
+require("plugins/vscode")
 require("plugins/lsp")
 require("plugins/which-key")
 require("plugins/mini")
