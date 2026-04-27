@@ -1,8 +1,8 @@
 vim.pack.add({
-    'https://github.com/stevearc/oil.nvim',
+    "https://github.com/stevearc/oil.nvim",
 })
 
-local oil = require('oil')
+local oil = require("oil")
 
 oil.setup({})
 

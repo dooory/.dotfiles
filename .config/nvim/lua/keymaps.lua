@@ -3,10 +3,10 @@ local map = vim.keymap.set
 vim.g.mapleader = " "
 
 -- Better window navigation
-map("n", "<C-h>", "<C-w>h")  -- move left
-map("n", "<C-j>", "<C-w>j")  -- move down
-map("n", "<C-k>", "<C-w>k")  -- move up
-map("n", "<C-l>", "<C-w>l")  -- move right
+map("n", "<C-h>", "<C-w>h") -- move left
+map("n", "<C-j>", "<C-w>j") -- move down
+map("n", "<C-k>", "<C-w>k") -- move up
+map("n", "<C-l>", "<C-w>l") -- move right
 
 -- Move lines up and down in visual mode
 map("v", "J", ":m '>+1<CR>gv=gv")
