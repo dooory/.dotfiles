@@ -29,6 +29,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "dolphin"
 local menu = "wofi -S drun"
+local browser = "vivaldi"
 
 -------------------
 ---- AUTOSTART ----
@@ -233,6 +234,7 @@ bind("E", exec(fileManager))
 bind("V", window.float({ action = "toggle" }))
 bind("R", exec(menu))
 bind("T", hl.dsp.layout("togglesplit")) -- dwindle only
+bind("B", exec(browser))
 
 -- Move focus with mainMod + arrow keys
 bind("H", focus({ direction = "left" }))
