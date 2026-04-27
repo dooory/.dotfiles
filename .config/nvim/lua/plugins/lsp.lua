@@ -1,6 +1,10 @@
 vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
+    "https://github.com/j-hui/fidget.nvim",
 })
+
+local fidget = require("fidget")
+fidget.setup({})
 
 vim.lsp.enable("lua_ls")
 vim.lsp.config("lua_ls", {
