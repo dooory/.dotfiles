@@ -24,6 +24,9 @@ local function binds(mainMod, programs)
 	bind("T", hl.dsp.layout("togglesplit")) -- dwindle only
 	bind("B", exec(programs.browser))
 
+	bind("F", window.fullscreen({ mode = "maximized" }))
+	bind("SHIFT + F", window.fullscreen({ mode = "fullscreen" }))
+
 	-- Move focus with mainMod + arrow keys
 	bind("H", focus({ direction = "left" }))
 	bind("L", focus({ direction = "right" }))
