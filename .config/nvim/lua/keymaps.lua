@@ -8,6 +8,17 @@ map("n", "<C-j>", "<C-w>j") -- move down
 map("n", "<C-k>", "<C-w>k") -- move up
 map("n", "<C-l>", "<C-w>l") -- move right
 
+-- Navigating tabs
+for i = 1, 9, 1 do
+    map("n", string.format("<C-%d>", i), string.format(":tabn %d<CR>", i), {
+        desc = string.format("Go to tab %d", i),
+    })
+end
+
+map("n", "<C-W>S", "<cmd>tab split<CR>", {
+    desc = "Duplicate tab",
+})
+
 -- Move lines up and down in visual mode
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
