@@ -22,3 +22,5 @@ map("n", "<leader>s", ":split<CR>")
 
 -- Paste without overwriting register
 map("v", "p", '"_dP')
+
+map("n", "<leader>r", ":restart<CR>", { desc = "Restart neovim" })
