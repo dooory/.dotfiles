@@ -39,6 +39,8 @@ return function(mainMod, programs)
 		bind("SHIFT + " .. key, window.move({ workspace = i }))
 	end
 
+	bind("tab", focus({ workspace = "previous" }))
+
 	-- Move/resize windows with mainMod + LMB/RMB and dragging
 	bind("mouse:272", window.drag(), { mouse = true })
 	bind("mouse:273", window.resize(), { mouse = true })
