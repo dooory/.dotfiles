@@ -11,3 +11,10 @@ vim.keymap.set("n", "<leader>?", function()
 end, {
     desc = "Buffer Local Keymaps (which-key)",
 })
+
+whichkey.add({
+    {
+        "<leader>s",
+        group = "Statusline toggles",
+    },
+})
