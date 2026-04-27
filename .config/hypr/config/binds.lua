@@ -11,11 +11,9 @@ return function(mainMod, programs)
 		end
 	end
 
-	bind({ mainMod, "SHIFT", "Q" }, window.close())
+	bind("SHIFT + Q", window.close())
 
 	bind("Return", exec(programs.terminal))
-
-	bind({ mainMod, "SHIFT", "Q" }, window.close())
 
 	bind("M", exec("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 	bind("E", exec(programs.fileManager))
@@ -38,12 +36,12 @@ return function(mainMod, programs)
 	for i = 1, 10 do
 		local key = i % 10 -- 10 maps to key 0
 		bind(key, focus({ workspace = i }))
-		bind({ mainMod, "SHIFT", key }, window.move({ workspace = i }))
+		bind("SHIFT + " .. key, window.move({ workspace = i }))
 	end
 
 	-- Move/resize windows with mainMod + LMB/RMB and dragging
-	bind({ mainMod, "mouse:272" }, window.drag(), { mouse = true })
-	bind({ mainMod, "mouse:273" }, window.resize(), { mouse = true })
+	bind("mouse:272", window.drag(), { mouse = true })
+	bind("mouse:273", window.resize(), { mouse = true })
 
 	-- Laptop multimedia keys for volume and LCD brightness
 	bind(
