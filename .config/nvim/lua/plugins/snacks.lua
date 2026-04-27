@@ -27,6 +27,7 @@ mapPicker("fc", "files", "Config Files", { cwd = vim.fn.stdpath("config") })
 mapPicker("ff", "files", "Files")
 mapPicker("fr", "recent", "Recent Files")
 mapPicker("fg", "grep", "Grep")
+mapPicker("fh", "help", "Help Pages")
 
 mapPicker("gl", "git_log", "Log")
 mapPicker("gg", "git_files", "Files")
