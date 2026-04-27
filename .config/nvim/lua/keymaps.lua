@@ -2,6 +2,8 @@ local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
+local wk = require("which-key")
+
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h") -- move left
 map("n", "<C-j>", "<C-w>j") -- move down
@@ -24,3 +26,24 @@ map("n", "<leader>s", ":split<CR>")
 map("v", "p", '"_dP')
 
 map("n", "<leader>r", ":restart<CR>", { desc = "Restart neovim" })
+
+wk.add({
+    {
+        "<leader>l",
+        group = "Statusline toggles",
+    },
+})
+
+map("n", "<leader>lp", function()
+    local statusline = require("modules/statusline")
+    statusline.togglepath()
+end, {
+    desc = "Toggle statusline path",
+})
+
+map("n", "<leader>lb", function()
+    local statusline = require("modules/statusline")
+    statusline.togglebranch()
+end, {
+    desc = "Toggle statusline git branch",
+})

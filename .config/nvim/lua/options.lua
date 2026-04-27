@@ -22,3 +22,6 @@ opt.undofile = true
 opt.swapfile = false
 
 opt.winborder = "rounded"
+opt.laststatus = 2
+
+require("modules/statusline")
