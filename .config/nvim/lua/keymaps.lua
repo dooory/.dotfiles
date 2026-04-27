@@ -25,19 +25,19 @@ map("n", "<leader>r", ":restart<CR>", { desc = "Restart neovim" })
 
 wk.add({
     {
-        "<leader>l",
+        "<leader>s",
         group = "Statusline toggles",
     },
 })
 
-map("n", "<leader>lp", function()
+map("n", "<leader>sp", function()
     local statusline = require("modules/statusline")
     statusline.togglepath()
 end, {
     desc = "Toggle statusline path",
 })
 
-map("n", "<leader>lb", function()
+map("n", "<leader>sb", function()
     local statusline = require("modules/statusline")
     statusline.togglebranch()
 end, {
