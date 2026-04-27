@@ -2,7 +2,7 @@ local exec = hl.dsp.exec_cmd
 local focus = hl.dsp.focus
 local window = hl.dsp.window
 
-local function binds(mainMod, programs)
+return function(mainMod, programs)
 	local function bind(keys, dispatcher, opts)
 		if type(keys) == "string" or type(keys) == "number" then
 			hl.bind(string.format("%s + %s", mainMod, tostring(keys)), dispatcher, opts)
@@ -71,5 +71,3 @@ local function binds(mainMod, programs)
 	bind({ "XF86AudioPlay" }, exec("playerctl play-pause"), { locked = true })
 	bind({ "XF86AudioPrev" }, exec("playerctl previous"), { locked = true })
 end
-
-return binds
