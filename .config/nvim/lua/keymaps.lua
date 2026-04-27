@@ -18,10 +18,6 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map("v", "<", "<gv")
 map("v", ">", ">gv")
 
--- Split windows
-map("n", "<leader>v", ":vsplit<CR>")
-map("n", "<leader>s", ":split<CR>")
-
 -- Paste without overwriting register
 map("v", "p", '"_dP')
 
