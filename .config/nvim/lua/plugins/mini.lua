@@ -4,3 +4,4 @@ vim.pack.add({
 
 require("mini.icons").setup({})
 require("mini.pairs").setup({})
+require("mini.surround").setup({})
