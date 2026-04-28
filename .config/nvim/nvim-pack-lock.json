@@ -1,8 +1,13 @@
 {
   "plugins": {
+    "auto-session": {
+      "rev": "62437532b38495551410b3f377bcf4aaac574ebe",
+      "src": "https://www.github.com/rmagatti/auto-session"
+    },
     "blink.cmp": {
       "rev": "6f5538d0ac8a154a489036db4b8f0436a7a70771",
-      "src": "https://github.com/saghen/blink.cmp"
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'v1'"
     },
     "blink.lib": {
       "rev": "dda2666685a5ac3598166577d2e34f1fff6b1637",

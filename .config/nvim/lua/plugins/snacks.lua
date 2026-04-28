@@ -28,6 +28,7 @@ mapPicker("ff", "files", "Files")
 mapPicker("fr", "recent", "Recent Files")
 mapPicker("fg", "grep", "Grep")
 mapPicker("fh", "help", "Help Pages")
+mapPicker("fk", "keymaps", "Keymaps")
 
 mapPicker("gl", "git_log", "Log")
 mapPicker("gg", "git_files", "Files")
