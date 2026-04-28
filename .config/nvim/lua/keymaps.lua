@@ -30,7 +30,7 @@ map("v", ">", ">gv")
 -- Paste without overwriting register
 map("v", "p", '"_dP')
 
-map("n", "<leader>r", ":restart<CR>", { desc = "Restart neovim" })
+map("n", "<leader>wr", ":restart<CR>", { desc = "Restart neovim" })
 
 map("n", "<leader>sp", function()
     local statusline = require("modules/statusline")
