@@ -10,3 +10,4 @@ function fish_user_key_bindings
     # The argument specifies the initial mode (insert, "default" or visual).
     fish_vi_key_bindings --no-erase insert
 end
+/home/dory/.local/bin/mise activate fish | source

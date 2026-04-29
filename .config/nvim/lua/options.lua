@@ -24,4 +24,10 @@ opt.swapfile = false
 opt.winborder = "rounded"
 opt.laststatus = 2
 
-require("modules/statusline")
+vim.loader.enable()
+
+opt.smartcase = true
+opt.ignorecase = true
+
+opt.inccommand = "split"
+opt.confirm = true

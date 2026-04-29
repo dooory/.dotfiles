@@ -45,3 +45,6 @@ map("n", "<leader>sb", function()
 end, {
     desc = "Toggle statusline git branch",
 })
+
+map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")

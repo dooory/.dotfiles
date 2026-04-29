@@ -5,7 +5,7 @@
       "src": "https://www.github.com/rmagatti/auto-session"
     },
     "blink.cmp": {
-      "rev": "6f5538d0ac8a154a489036db4b8f0436a7a70771",
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "'v1'"
     },
@@ -55,7 +55,7 @@
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "21db1fd40cbcbf1524ae154ab8f394fdf085749a",
+      "rev": "6419b36f50c42420cbbf1d3ffba573094cf414c8",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "oil.nvim": {
