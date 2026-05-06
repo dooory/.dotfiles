@@ -31,6 +31,9 @@ return function(mainMod, programs)
 	bind("K", focus({ direction = "up" }))
 	bind("J", focus({ direction = "down" }))
 
+	bind("CTRL + J", focus({ workspace = "-1" }))
+	bind("CTRL + K", focus({ workspace = "+1" }))
+
 	-- Switch workspaces with mainMod + [0-9]
 	-- Move active window to a workspace with mainMod + SHIFT + [0-9]
 	for i = 1, 10 do
